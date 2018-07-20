@@ -1,0 +1,241 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #777788;
+}
+.content{
+  font-size: 14px;
+}
+td, th{
+  /* text-align: center; */
+  padding: 8px;
+
+}
+th{
+  font-size: 14px;
+  padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: left;
+   background-color: #0057B8;
+   color: white;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
+.clearfix {
+    clear: both;
+}
+
+header {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header > .title {
+    display: inline-block;
+    color: #3771A1;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
+}
+
+header img {
+    vertical-align: middle;
+    margin-right: 24px;
+}
+
+main {
+    margin: 0;
+    padding: 15px;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 1px solid #CCCCCC;
+    text-align: right;
+}
+
+footer a {
+    display: inline-block;
+    color: #777788;
+    margin: 15px 10% 0 0;
+}
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  font: 200 15px/1.8 'Open Sans', sans-serif;
+}
+
+main {
+  font-size: 20px;
+  padding-top: 80px;
+}
+#skip-to-main-content {
+  display: none;
+}
+hr {
+  border-color: #337ab7;
+}
+.text-primary{
+  color: #337ab7;
+}
+a{
+  color: #337ab7;
+}
+
+label {
+  color: #355691;
+}
+
+/* .nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} */
+
+.site-icon {
+  width: auto;
+  max-height: 70px;
+  padding-left: 2vw;
+}
+
+.icon-bar {
+  background-color: black;
+}
+
+.navbar {
+  font-family: 'Open sans', sans-serif;
+  color: #333;
+  background-color: rgba(255, 255, 255);
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  padding-top: 5px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+  transition: all 1s;
+}
+
+.navbar-header {
+  display: flex;
+  color: white;
+}
+
+header h3 {
+  color: #333;
+  font-size: 2rem;
+  padding-left: 30px;
+  margin-top: 18px;
+}
+
+#myNavbar .active a {
+  color: #337ab7;
+  border-top: 10px solid #337ab7;
+  margin-top: -10px;
+}
+.glyphicon{
+  line-height: 0;
+}
+.nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  outline: none;
+}
+
+#myNavbar ul li a {
+  font-family: Montserrat, sans-serif;
+
+  padding: 25px 10px;
+}
+
+.nav a:hover, .nav li:hover>a, .nav .menu-active>a {
+  color: #337ab7;
+  background-color: transparent;
+  background: #f6f6f6;
+}
+
+.nav>li {
+  padding: 0px 3px;
+}
+
+.nav ul {
+  margin: 0px 0 0 15px;
+  /* box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08); */
+}
+
+.nav ul li {
+  /* background: #fff; */
+  /* border-top: 1px solid #f4f4f4; */
+}
+
+.nav ul li:hover {
+  background: #f6f6f6;
+}
+
+.nav ul li a {
+  color: #333;
+}
+
+.nav ul ul {
+  margin: 0;
+}
+
+.collapse>li {
+  padding-top: 15px;
+}
+
+#nav-menu-container {
+  float: right;
+  margin: 5px 0;
+}
+#top {
+  padding-top: 12px;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 1s;
+}
+#top a, #top h3{
+  color: white;
+}
+#top a:hover, #top .nav li:hover>a, #top .nav #top .menu-active>a, #top ul li:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: #97EAD2;
+}
+#top .active a {
+  color: #97EAD2;
+  border-top: 10px solid #06A77D;
+  margin-top: -10px;
+}
+#top .icon-bar{
+  color: white;
+}
+.formcontent{
+  max-width: 60%;
+}
+.center{
+  margin: auto;
+}
+.half{
+  width: 50%;
+}
+@media (max-width: 1000px){
+  .nav a{
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  #nav-menu-container {
+    display: none;
+  }
+
+}

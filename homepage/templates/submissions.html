@@ -1,0 +1,70 @@
+<%inherit file="base.htm" />
+
+<%block name="content">
+    <div class="content col-md-12" style="overflow-x:auto;">
+        <table>
+          <tr>
+            <th>Entry Title</th>
+            <th>Client</th>
+            <th>Division</th>
+            <th>Category</th>
+            <th>Status</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Entry Form</th>
+            <th>Summary</th>
+            <th>Supporting File</th>
+            <th>Supporting File</th>
+            <th>Supporting File</th>
+            <th>Links</th>
+            <th>Links</th>
+            <th>Links</th>
+          </tr>
+          %for s in submissions:
+            <tr>
+              <td>${s.entryTitle}</td>
+              <td>${s.client}</td>
+              <td>${s.division}</td>
+              <td>${s.category}</td>
+              <td>${s.status}</td>
+              <td>${s.name}</td>
+              <td>${s.email}</td>
+              <td><a href="//goldenspikes.s3.amazonaws.com/media/${s.entryForm}">link</a></td>
+              <td><a href="${STATIC_URL}goldenspikes/media/${s.summary}">link</a></td>
+              %if s.file1:
+                <td><a href="${STATIC_URL}goldenspikes/media/${s.file1}">link</a></td>
+              %else:
+                <td></td>
+              %endif
+              %if s.file2:
+                <td><a href="${STATIC_URL}goldenspikes/media/${s.file2}">link</a></td>
+              %else:
+                <td></td>
+              %endif
+              %if s.file3:
+                <td><a href="${STATIC_URL}goldenspikes/media/${s.file3}">link</a></td>
+              %else:
+                <td></td>
+              %endif
+
+              %if s.link1 is not '':
+                <td><a href="${s.link1}">link</a></td>
+              %else:
+                <td></td>
+              %endif
+              %if s.link2 is not '':
+                <td><a href="${s.link2}">link</a></td>
+              %else:
+                <td></td>
+              %endif
+              %if s.link3 is not '':
+                <td><a href="${s.link3}">link</a></td>
+              %else:
+                <td></td>
+              %endif
+            </tr>
+            %endfor
+        </table>
+
+    </div>
+</%block>

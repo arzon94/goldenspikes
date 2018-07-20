@@ -1,0 +1,17 @@
+from boxsdk import JWTAuth
+
+auth = JWTAuth(
+    client_id='a7n52yuchf9u6zqyi3wh4t62zikha3g5',
+    client_secret='zKZgMBtqd7Gq9MpgDtTVGKhnVYNmSo4i',
+    enterprise_id='25517710',
+    jwt_key_id='s2wczc3d',
+    rsa_private_key_file_sys_path='-----BEGIN ENCRYPTED PRIVATE KEY-----\nMIIFDjBABgkqhkiG9w0BBQ0wMzAbBgkqhkiG9w0BBQwwDgQI6cJx0dw7coYCAggA\nMBQGCCqGSIb3DQMHBAiyT3f7nd7wowSCBMhzTdBFitGYJyJFXtv10o1V3LX/ZfCz\neb9l56McJWpUPxG08nDK0x/yv4RIyraeMcQTKVKIOd431gLIDz1JEBLhDc8ptG8x\nsS82c4NevVuXUByxqp9MMPqBy/AN8KuFR3OED3oXSd2DgrC64r1mFQaKJLM+GdPT\nTGNrIJmfMdEvuO3e8LWB5PJ7+NBtjB7VfpW+tA8Vas8qAV7zIjHDsMpbWGL5+toi\nmahOqW665AKZIdhpn1hqpj7b8v/HLNEx5CWZueaVKtHgo/FHbzGThDrFXM3r4g8q\nPx49uJ5O0pwVk72YSzrn6Dw6OdGDamo/AM1kTQHApod7lxySpMlS0iW4zFqX2Xzy\nfuPNP3h3hNCW7flurCRT3ycquKPWwfEeCAwahZgs2NeCMjKyx1D0ED2nfIwx0Sey\nXCLk9IzoSos8yYfeuNRKJNk1BwO9f9nPDB+d//Qng66thGmPRa3nuqmfSCi8M9CP\nzZZ3H0TlxN8J8JFxMh5z0LhVd12DjwVPs/mGXRP/OoO5mF5nB0oItaJhT+0Tm87U\n+UrnB/gqpRQQJT3IF8YSGktpm80c0Q7tko3Fp5B18dn6/yylXpWuDCpkL+v7pDIV\nF2G9HIT7vcJneDus8cw+TSU9hN4qPhkjRk45Uqac/tN0ZZweD+2F50ArxIJNCWYf\n3dmKMIiFuCzg2wfq7cWNiS2eXNt7RcX2arETErer0osvJHzzoE2iPTNgCY01ak4s\n3J2EHkKhhp7Xo71vAdZ1c0S8hCtw+tXpvGIeVOX9MS70MGykFIMj1sK5wMqHNZ5b\nuZQsqTe6dgRz2O1plriGj/mzI9WK0hrekBvErxtx/iclJ1NWxet70wQ3cpsujaW5\nt101Pn9dlglQ1eYdwN221H8OQVrUw1CrpTwDNYyffc9TQhyNZkaJpLiYBLItUc/P\nZLcW4J4zByV5OwoAT83tlUWuwfrgmXKEV8SzC/Mt6l+6ixz94tKDBINb+NoymZbA\nJtuPiLaBAerrTLnon+u3QKh8uEx4pK1SZHfr0G9E04nhRXXkeIVJCVxH9tKI7bmt\nkqIw/p68TDenY0Dr9QUqOhBjdqNgU5JP+H1clUx4lXtEgAv/6K4U1IlseWZ2Z/Q0\nl7JECHRuBPSH5So7dSiWIPHzMw37PYRduoyBZh6Bt8DuyQv+e++iFJ+bRR3lZdDb\nayUM92yhmxtQtgDWw8WeubzuWWVvdOdD73Nw0Qu8BMv3lYpH4n/3K1KQtq2dq/H+\nhN5vqn17Fj57/HkA6wXbXjP7gBS+60AXUvoALYuBMSrpj234wwRjStxrvr8M6EC0\nW5Dz1/02B8HG7VsY/6Njo9pHX1efTX6Y1hw96VQRxA1Lj19wGLOAkjaFY3GQidHn\nYfpVc5YzCS6HvFViWjuNH10L2nfU+cR6QlPbqHEEA/mmui+uTeX0p/EGTaqpwExt\noaK6N/Z7pKzkv+vGHLPqrPt+XEY85TvO/ba6lzevIMUWEZoLsIrlgTBV0fEurrvx\nYVjO9xW97Ecm+4f/V3G9d4TO8q5/SkPP4bVx9nkgkAGZGD4sPraTkJnT9ETj2tzp\nXTrcwStpxYM7nmfGFpWpw86+sMBlRqjePcYEMSuuBjEBbFY2R1jkCV7yWyFRzgA0\nWn0=\n-----END ENCRYPTED PRIVATE KEY-----\n",
+"passphrase": "2dd3c885fd8d4571ca848b912ac6e53a',
+    # store_tokens=your_store_tokens_callback_method,
+)
+
+access_token = auth.authenticate_instance()
+
+from boxsdk import Client
+
+client = Client(auth)
